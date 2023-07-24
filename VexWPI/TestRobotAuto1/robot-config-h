@@ -1,0 +1,31 @@
+using namespace vex;
+
+extern brain Brain;
+//detection
+using signature = vision::signature;
+
+//detect color
+extern signature Vision5__BLUEBOX;
+extern signature Vision5__GREENBOX;
+extern signature Vision5__REDBOX;
+extern signature Vision5__SIG_4;
+extern signature Vision5__SIG_5;
+extern signature Vision5__SIG_6;
+extern signature Vision5__SIG_7;
+extern vision Vision5;
+//drive to location
+extern smartdrive Drivetrain;
+extern motor_group ForkMotorGroup;
+extern rotation Rotation4;
+extern gps GPS8;
+extern distance DistanceLeft;
+extern distance DistanceRight;
+extern optical Optical19;
+extern bumper BumperA;
+
+/**
+ * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
+ *
+ * This should be called at the start of your int main function.
+ */
+void vexcodeInit(void);
